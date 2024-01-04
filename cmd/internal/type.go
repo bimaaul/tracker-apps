@@ -1,5 +1,7 @@
 package internal
 
+import cashflowService "github.com/bimaaul/tracker-apps/internals/cashflow/service"
+
 type Config struct {
 	Host     string
 	Port     string
@@ -7,4 +9,8 @@ type Config struct {
 	User     string
 	DBName   string
 	SSLMode  string
+}
+
+type Service struct {
+	Cashflow cashflowService.CashflowServiceProvider
 }
